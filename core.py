@@ -109,5 +109,5 @@ def main():
                     except telegram.error.BadRequest:
 
 # Run the main function only in the main process
-if __name__ == "__main__":
+if __name__ == "":
     main()
