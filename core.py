@@ -108,12 +108,6 @@ def main():
                                                       error_message=strings.error_invoice_expired)
                     except telegram.error.BadRequest:
 
-        # If there were any updates...
-        if len(updates):
-            # Mark them as read by increasing the update_offset
-            next_update = updates[-1].update_id + 1
-
-
 # Run the main function only in the main process
 if __name__ == "__main__":
     main()
