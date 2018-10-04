@@ -107,10 +107,7 @@ def main():
                                                       ok=False,
                                                       error_message=strings.error_invoice_expired)
                     except telegram.error.BadRequest:
-                    # Go to the next update
-                    continue
-                # Forward the update to the worker
-                receiving_worker.queue.put(update)
+
         # If there were any updates...
         if len(updates):
             # Mark them as read by increasing the update_offset
