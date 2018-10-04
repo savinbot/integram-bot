@@ -107,7 +107,6 @@ def main():
                                                       ok=False,
                                                       error_message=strings.error_invoice_expired)
                     except telegram.error.BadRequest:
-                        print(f"ERROR: pre_checkout_query expired before an answer could be sent")
                     # Go to the next update
                     continue
                 # Forward the update to the worker
